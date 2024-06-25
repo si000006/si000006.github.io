@@ -1,15 +1,83 @@
 html{
     background-color:#a8d0d0 ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: relative;
+    
 }
 
 h1 {
-    position: relative;
+    position: absolute;
+    margin: 0px;
+    text-align: center;
+    z-index: 1;
+    font-size: 50px;
+    width: 100%;
+    
 }
+
+.site-title img {
+    height: 343px;
+    align-items: center;
+    object-fit: cover;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h2 {
+    margin: 12px;
+    }
+
+.main {
+    background-color: #d4e9e7;
+    width: 1025px;
+    margin: 0px 208px;
+    }
+
 .site-title h1 {
     color: white;
 }
 .starfish-description img {
     width: 252px;
     float: left;
-    margin: 20px;
+    margin: 10px;
+}
+
+.starfish-description p {
+    margin: 30px;
+    }
+
+
+.starfish-description::after {
+    content: "";
+    clear: both;
+    display: block;
+    }
+
+body nav ul {
+        flex-wrap: nowrap;
+        margin: 0px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    font-size: 20px;
+}
+
+nav ul li:nth-child(1) {
+    padding: 0px 125px;
+    border-right: 1px solid;
+}
+
+nav ul li:nth-child(2) {
+    padding: 0px 125px;
+    border-right: 1px solid;
+}
+
+nav ul li:nth-child(3) {
+    padding: 0px 125px;
 }
