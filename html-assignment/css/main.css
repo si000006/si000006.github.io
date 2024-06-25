@@ -6,16 +6,16 @@ body{
     box-shadow: 0 0 2px 1px black;
 }
 header,footer {
-background-color: aqua;
+    background-color: aqua;
 }
 .site-title {
-color: rgb(20, 0, 122);
+    color: rgb(20, 0, 122);
 }
 ul.square-list {
-list-style-type: square;
+    list-style-type: square;
 }
 ul.square-list li:nth-child(odd){
-color: brown;
+    color: brown;
 }
 a{
     text-decoration: none;
