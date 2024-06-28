@@ -37,8 +37,8 @@ h2 {
     background-color: #d4e9e7;
     width: 1025px;
     align-items: center;
-
-    margin: 0px;
+    margin-right: auto;
+    margin-left: auto;
     }
 
 .site-title h1 {
@@ -113,14 +113,11 @@ section div form label {
     margin: 12px;
 }
 
-.checkbox {
-    display: inline;
-}
-
-body {
-    border: 50px;
-    padding: 20px;
-
+.checkbox input {
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+    border: 0cap;
 }
 
 button {
@@ -135,6 +132,6 @@ h3 {
 
 footer {
     text-align: right;
-    margin: 20px;
+    
     border-bottom: 20px;
 }
