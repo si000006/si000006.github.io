@@ -8,7 +8,9 @@
 </head>
 <body class="main">
     <div class="wrapper">
+        <!-- wrapper centers and adds width to content -->
         <header class="site-title">
+            <!-- headers has an image in html with h1 overlapped  -->
             <h1>Lone Starfish</h1>
             <img src="images/lone-starfish-wide.jpg" alt="A wide image of a starfish">
             <nav>
@@ -21,7 +23,8 @@
         </header>
         <section id=life class="starfish-description">
             <h2>Life of a Starfish</h2>
-            <img src="images/lone-starfish.jpg" alt="An image of a star fish">
+            <img src="images/lone-starfish.jpg" alt="An image of a star fish" > 
+            <!-- makes it when the image is not loading viewer still know what the image contains  -->
             <p>Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.
             </p>
         </section>
@@ -44,24 +47,22 @@
                     <input type="text" name="user-email" id="user-email">
                     <label for="user-message">Your Message</label>
                     <input type="text" name="user-message" id="user-message">
-                    <h3>Would you like to visit the starfish?</h3>
-                    <div class="checkbox">
-                        <label for="yes">Yes</label>
-                        <input type="checkbox" name="yes" id="yes">
-                        <label for="no">No</label>
-                        <input type="checkbox" name="no" id="no">
-                        <label for="maybe">Maybe</label>
-                        <input type="checkbox" name="maybe" id="maybe">
-                    </div>
-                    <button type="submit">Send</button>
-                  
                 </form>
+                <h3>Would you like to visit the starfish?</h3>
+                <div class="checkbox">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="yes" id="yes">
+                    <label for="no">No</label>
+                    <input type="radio" name="no" id="no">
+                    <label for="maybe">Maybe</label>
+                    <input type="radio" name="maybe" id="maybe">
+                </div>
+                <div>
+                    <button type="submit">Send</button>
+                </div>
             </div>
         </section>
         <footer>© Lone Starfish.</footer>
     </div>
-    <!-- wrapper centers and adds width to content -->
-
-    <!-- headers has an image in html with h1 overlapped  -->
-</body>
+    </body>
 </html>

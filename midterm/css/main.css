@@ -13,6 +13,7 @@ h1 {
     margin: 0px;
     text-align: center;
     z-index: 1;
+    /* make sure the text is above the image  */
     font-size: 50px;
     width: 100%;
     top: 210px;
@@ -24,8 +25,6 @@ h1 {
     align-items: center;
     object-fit: cover;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
     /* making sure the image is in the center cuts off the unneeded parts */
 }
 
@@ -39,14 +38,20 @@ h2 {
     align-items: center;
     margin-right: auto;
     margin-left: auto;
+    /* makes the body always centered  */
+    margin-top: 0px;
+    margin-bottom: 16px;
+    padding-bottom: 18px;
     }
 
 .site-title h1 {
     color: white;
 }
+
 .starfish-description img {
     width: 252px;
     float: left;
+    /* let text wrap around the image */
     margin: 10px;
 }
 
@@ -63,8 +68,8 @@ h2 {
     }
 
 body nav ul {
-        flex-wrap: nowrap;
-        margin: 0px;
+    flex-wrap: nowrap;
+    margin: 0px;
 }
 
 nav ul li {
@@ -99,9 +104,7 @@ section div form input {
     margin: 12px;
 }
 
-section div form label:nth-child(3) {
-    height: 100px;
-}
+
 section div form label {
     margin: 12px;
 }
@@ -111,13 +114,6 @@ section div form label {
     border: 1px solid;
     padding-top: 35px;
     margin: 12px;
-}
-
-.checkbox input {
-    padding: 0px;
-    margin: 0px;
-    display: inline-block;
-    border: 0cap;
 }
 
 button {
@@ -130,8 +126,22 @@ h3 {
     margin: 12px;
 }
 
+.checkbox {
+    display: flex;
+    gap: 10px;
+    margin: 12px;
+}
+
+.contact-info form:last-child {
+    height: 300px;
+}
+
+.contact-info form input:last-child {
+    height: 100px;
+}
+/* select the last box to make it higher */
+
 footer {
     text-align: right;
-    
-    border-bottom: 20px;
+    margin-right: 20px;
 }
