@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: #c78c06;
+    padding: 10px 0;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.home, .about, .services, .team, .contact {
+    padding: 50px 0;
+}
+
+.home h1, .about h2, .services h2, .team h2, .contact h2 {
+    color: #c78c06;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c78c06;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.service {
+    background-color: #ffe6ac;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form label {
+    margin-bottom: 5px;
+}
+
+.contact form input,
+.contact form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Media Queries */
+@media (min-width: 760px) {
+    .nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-member {
+        flex-direction: row;
+    }
+
+    .contact form {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contact form label,
+    .contact form input,
+    .contact form textarea,
+    .contact form button {
+        width: 48%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
